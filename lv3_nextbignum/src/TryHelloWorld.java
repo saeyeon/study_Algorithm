@@ -30,3 +30,5 @@ class TryHelloWorld {
 		System.out.println(test.nextBigNumber(n));
 	}
 }
+
+//주어진 n의 1의 개수를 찾고 n보다 큰 수들의 1의 개수를 찾아서 같으면 그게 nextbignum
