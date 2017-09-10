@@ -18,7 +18,7 @@ public class Main {
 		System.out.println(num);
 	}
 
-	private static int primeNum(int i) { //i를 집어넣어서 소인수를 구하고 소인수가 소수인 애들 개수 체크
+	private static int primeNum(int i) { // i를 집어넣어서 소인수를 구하고 소인수가 소수인 애들 개수 체크
 
 		int j = 2;
 		int cnt = 0;
@@ -48,3 +48,5 @@ public class Main {
 
 	}
 }
+
+// 범위의 숫자들 중에 소수를 먼저 구해서 배열에 집어넣고 시작

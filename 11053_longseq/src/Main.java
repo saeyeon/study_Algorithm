@@ -24,12 +24,12 @@ public class Main {
 			}
 		}
 		int max = 0;
-		
-		for(int i=0; i<cnt; i++){
-			if(max<dp[i])
+
+		for (int i = 0; i < cnt; i++) {
+			if (max < dp[i])
 				max = dp[i];
 		}
-		
+
 		System.out.println(max);
 	}
 }
