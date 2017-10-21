@@ -12,7 +12,7 @@ public class Main {
 
 		int[] dp = new int[num + 1];
 
-		for (int i = 2; i <= num; i++) { //dp[1] = 0;
+		for (int i = 2; i <= num; i++) { // dp[1] = 0;
 
 			dp[i] = dp[i - 1] + 1;
 

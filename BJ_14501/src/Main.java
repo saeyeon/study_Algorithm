@@ -17,19 +17,19 @@ public class Main {
 			P[i] = scan.nextInt();
 			dp[i] = P[i];
 		}
-		
-		for(int i=2;i<=N;i++){
-			for(int j=1;j<i;j++){
-				if(i-j>=T[j])
-					dp[i]=Math.max(P[i]+dp[j], dp[i]);
+
+		for (int i = 2; i <= N; i++) {
+			for (int j = 1; j < i; j++) {
+				if (i - j >= T[j])
+					dp[i] = Math.max(P[i] + dp[j], dp[i]);
 			}
 		}
-		
+
 		int max = 0;
-		
-		for(int i=1; i<=N; i++){
-			if(i+T[i]<=N+1)
-				if(max<dp[i])
+
+		for (int i = 1; i <= N; i++) {
+			if (i + T[i] <= N + 1)
+				if (max < dp[i])
 					max = dp[i];
 		}
 		System.out.println(max);
